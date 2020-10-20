@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, CardColumns, Container, Modal } from "react-bootstrap";
+import { Button, Card, CardColumns, Modal } from "react-bootstrap";
 
 const ProjectModal = ({ show, handleClose, title, overview, imageArray }) => {
     const [photoInFocus, setPhotoInFocus] = React.useState(
