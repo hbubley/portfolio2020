@@ -1,1 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+$primary-color: #374263;
+$primary-font: 'Bad Script',
+cursive;
+$secondary-color: #FED3CC;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+.CopyText {
+    color: rgba(100, 100, 100, 0.8);
+}

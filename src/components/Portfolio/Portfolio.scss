@@ -1,11 +1,7 @@
-@import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 $primary-color: #374263;
-$secondary-color: #FED3CC;
-$primary-font: 'Sacramento',
+$primary-font: 'Bad Script',
 cursive;
+$secondary-color: #FED3CC;
 $secondary-font: 'Open Sans',
 sans-serif;
 
@@ -46,6 +42,11 @@ sans-serif;
     background-color: $primary-color;
     color: white;
     font-family: $secondary-font;
+
+    .SelectedImage {
+        box-shadow: 0px 0px 1px 3px $secondary-color;
+    }
+
 
     .FocusedImageText {
         color: black;

@@ -14,7 +14,32 @@ const Portfolio = () => {
                 "Filtering service used to sort through medical facility patients by set conditions selected by the user.",
             overview:
                 "Application allows medical facilities to select a variety of conditions by which to filter patients by. Users can build out specific queries, choosing whether the conditions should be treated as 'ands' or 'ors'. Built in React. The application features error checking, data handling, API calls, routing, and responsive design.",
-            images: [],
+            images: [
+                {
+                    img:
+                        "https://res.cloudinary.com/dum4u7sro/image/upload/v1601406159/Portfolio/PP-AdvancedReporting/advancedreporting-thumb_epjnb5.png",
+                    caption:
+                        "Landing page for application, user is able to select from previously created queries or create a new query.",
+                },
+                {
+                    img:
+                        "https://res.cloudinary.com/dum4u7sro/image/upload/v1601406334/Portfolio/PP-AdvancedReporting/advancedreporting-fulllength_wom75i.png",
+                    caption:
+                        "Full length page example, showing completed query as well as returned data-set.",
+                },
+                {
+                    img:
+                        "https://res.cloudinary.com/dum4u7sro/image/upload/v1601406437/Portfolio/PP-AdvancedReporting/advancedreporting-fulllength2_dcsdim.png",
+                    caption:
+                        "Full length page example, showing completed query along with returned data-set.",
+                },
+                {
+                    img:
+                        "https://res.cloudinary.com/dum4u7sro/image/upload/v1601406457/Portfolio/PP-AdvancedReporting/advancedreporting-save_f6w4hv.png",
+                    caption:
+                        "User is provided option to save the query as well as change the default name of the query.",
+                },
+            ],
         },
         {
             title: "Care Planning",
@@ -26,6 +51,12 @@ const Portfolio = () => {
             overview:
                 "An application that allows medical providers to create and maintain extensive careplans for patients. Providers Start by adding a 'problem' to the careplan and then corresponding goals to improve upon the problem. The careplan has different views depending on the status of the careplan ('approved', 'pending', 'revision requested', etc...), and allows users to dynamically add notes, encounters, and other such relevant information as it occurs. Data is stored and sent to an API.",
             images: [
+                {
+                    img:
+                        "https://res.cloudinary.com/dum4u7sro/image/upload/v1601406044/Portfolio/PP-CarePlan/careplan-thumb_nrbvpn.png",
+                    caption:
+                        "Application dashboard, existing careplan is displayed along with any notifications (such as plan was reviewed by a doctor).",
+                },
                 {
                     img:
                         "https://res.cloudinary.com/dum4u7sro/image/upload/v1601405969/Portfolio/PP-CarePlan/careplan-addprob_gyji0o.png",
@@ -90,7 +121,12 @@ const Portfolio = () => {
                 },
                 {
                     img:
-                        "https://res.cloudinary.com/dum4u7sro/image/upload/v1601404770/Portfolio/Darwin/darwin-gameplay_hs3vuf.png",
+                        "https://res.cloudinary.com/dum4u7sro/image/upload/v1603218871/Portfolio/Darwin/darwingame_muv9xi.png",
+                    caption: "Gameplay screen with possible action options",
+                },
+                {
+                    img:
+                        "https://res.cloudinary.com/dum4u7sro/image/upload/v1603218959/Portfolio/Darwin/screenshot-localhost_3001-2020.10.20-13_35_39_calrjt.png",
                     caption: "Gameplay screen with possible action options",
                 },
             ],
