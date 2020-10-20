@@ -1,0 +1,49 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$primary-color: #374263;
+$primary-font: 'Sacramento',
+cursive;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Header {
+    background-image: url("https://res.cloudinary.com/dum4u7sro/image/upload/v1601148619/Peach_and_White_Floral_Site_Map_Chart_dhgrse.png");
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 5px rgba(59, 59, 59, 0.8) inset;
+
+    .container {
+        background-color: $primary-color;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border-radius: 5px;
+
+        h1 {
+            font-family: $primary-font;
+            letter-spacing: 1px;
+            font-size: 6rem;
+            color: white;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: $secondary-font;
+            color: white;
+            margin-top: 1rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }
+}

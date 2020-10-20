@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$primary-color: #374263;
+$secondary-color: #FED3CC;
+$primary-font: 'Sacramento',
+cursive;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+.Portfolio {
+
+    h1 {
+        font-family: $primary-font;
+        color: $primary-color;
+        font-size: 4rem;
+    }
+
+    hr {
+        background-color: $secondary-color;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        border-color: $primary-color;
+        color: white;
+        background-color: $primary-color;
+        height: 98%;
+        font-family: $secondary-font;
+    }
+
+    .DetailsButton {
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: white;
+    }
+
+}
+
+.modal-header {
+    font-family: $primary-font;
+}
+
+.PortfolioModal {
+    background-color: $primary-color;
+    color: white;
+    font-family: $secondary-font;
+
+    .FocusedImageText {
+        color: black;
+        font-family: $secondary-font;
+        text-align: center;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .modal-title {
+        font-family: $primary-font;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-top: 1rem;
+    }
+
+    hr {
+        background-color: $secondary-color;
+        margin-bottom: 2rem;
+    }
+
+}

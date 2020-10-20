@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$primary-color: #374263;
+$primary-font: 'Sacramento',
+cursive;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

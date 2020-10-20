@@ -1,0 +1,61 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$primary-color: #374263;
+$secondary-color: #FED3CC;
+$primary-font: 'Sacramento',
+cursive;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+.About {
+    hr{
+        background-color: $secondary-color;
+    }
+    color: $primary-color;
+    h1 {
+        font-family: $primary-font;
+        color: $primary-color;
+        font-size: 4rem;
+    }
+
+    label {
+        font-family: $primary-font;
+        font-size: 3rem;
+    }
+
+    p {
+        font-family: $secondary-font;
+    }
+
+    img {
+        height: 300px;
+        border-radius: 20px;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a {
+        display: block;
+
+        img {
+            height: 100px;
+        }
+    }
+
+    h2 {
+        font-family: $secondary-font;
+        color: $primary-color;
+    }
+
+    .center-div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
