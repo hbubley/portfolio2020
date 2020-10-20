@@ -1,1 +1,31 @@
 @import "~bootstrap/scss/bootstrap";
+$primary-color: #374263;
+$secondary-color: #FED3CC;
+$primary-font: 'Bad Script',
+cursive;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+.ContactContainer {
+    h1 {
+        font-family: $primary-font;
+        color: $primary-color;
+        font-size: 4rem;
+        margin: 1rem;
+    }
+
+    label {
+        font-family: $secondary-font;
+        color: $primary-color;
+        font-size: 1.2rem;
+    }
+    button{
+        background-color: $secondary-color;
+        color: $primary-color;
+        border: white;
+        font-family: $secondary-font;
+    }
+    hr {
+        background-color: $secondary-color;
+    }
+}

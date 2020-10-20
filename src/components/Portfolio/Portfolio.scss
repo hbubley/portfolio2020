@@ -11,11 +11,12 @@ sans-serif;
         font-family: $primary-font;
         color: $primary-color;
         font-size: 4rem;
+        margin: 1rem;
     }
 
     hr {
         background-color: $secondary-color;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .card {
@@ -30,6 +31,7 @@ sans-serif;
         background-color: $secondary-color;
         color: $primary-color;
         border: white;
+        font-family: $secondary-font;
     }
 
 }

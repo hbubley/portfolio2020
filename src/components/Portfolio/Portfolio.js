@@ -190,7 +190,7 @@ const Portfolio = () => {
             <hr />
             <Row>
                 {portfolioData.map((project) => (
-                    <Col lg={4}>
+                    <Col lg={4} className="mb-3">
                         <Project
                             title={project.title}
                             image={project.thumbnail}
