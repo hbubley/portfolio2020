@@ -13,18 +13,27 @@ const Contact = () => {
             <Form className="m-2 mt-4 mb-4">
                 <Form.Group>
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="John Smith" />
+                    <Form.Control
+                        name="name"
+                        type="text"
+                        placeholder="John Smith"
+                    />
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>Email address</Form.Label>
                     <Form.Control
+                        name="email"
                         type="email"
                         placeholder="example@email.com"
                     />
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>Phone Number</Form.Label>
-                    <Form.Control type="text" placeholder="555 - 867 - 5309" />
+                    <Form.Control
+                        name="number"
+                        type="text"
+                        placeholder="555 - 867 - 5309"
+                    />
                     <Form.Text className="text-muted">
                         I'll never share your phone or email with anyone else.
                     </Form.Text>
@@ -32,6 +41,7 @@ const Contact = () => {
                 <Form.Group>
                     <Form.Label>Subject</Form.Label>
                     <Form.Control
+                        name="subject"
                         type="text"
                         label="Check me out"
                         placeholder="Get creative with it!"

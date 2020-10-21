@@ -10,7 +10,7 @@ const Navigation = ({
         <Navbar variant="light" expand="lg">
             <Navbar.Brand>
                 <img
-                    src="https://res.cloudinary.com/dum4u7sro/image/upload/v1603229988/Portfolio/Bubley_wqzzmi.png"
+                    src="https://res.cloudinary.com/dum4u7sro/image/upload/v1603309614/Portfolio/Bubley_1_eijbc8.png"
                     alt="logo"
                     width="60px"
                 />

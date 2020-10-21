@@ -11,7 +11,7 @@ function App() {
     const [about, setAbout] = useState(true);
     const [portfolio, setPortfolio] = useState(false);
     const [contact, setContact] = useState(false);
-
+ 
     const toggleAbout = async () => {
         setPortfolio(false);
         setContact(false);
