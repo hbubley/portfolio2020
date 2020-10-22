@@ -1,8 +1,39 @@
 import React from "react";
 import { Button, Container, Form, Row } from "react-bootstrap";
 import "./Contact.scss";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+    const [messageObject, setMessageObject] = React.useState({
+        name: "",
+        email: "",
+        number: "",
+        subject: "",
+        message: "",
+    });
+
+    const onChange = (e) => {
+        setMessageObject({ ...messageObject, [e.target.name]: e.target.value });
+    };
+
+    let templateParams = {
+        name: messageObject.name,
+        email: messageObject.email,
+        number: messageObject.number,
+        subject: messageObject.subject,
+        message: messageObject.message,
+    };
+
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        await emailjs.send(
+            "service_7zlth79",
+            "template_zzlfyid",
+            templateParams,
+            "user_IglOu9pNmrUEwfuluBONm"
+        );
+        console.log(messageObject);
+    };
     return (
         <Container fluid className="ContactContainer">
             <Row>
@@ -16,7 +47,8 @@ const Contact = () => {
                     <Form.Control
                         name="name"
                         type="text"
-                        placeholder="John Smith"
+                        value={messageObject.name}
+                        onChange={(e) => onChange(e)}
                     />
                 </Form.Group>
                 <Form.Group>
@@ -24,7 +56,8 @@ const Contact = () => {
                     <Form.Control
                         name="email"
                         type="email"
-                        placeholder="example@email.com"
+                        value={messageObject.email}
+                        onChange={(e) => onChange(e)}
                     />
                 </Form.Group>
                 <Form.Group>
@@ -32,7 +65,8 @@ const Contact = () => {
                     <Form.Control
                         name="number"
                         type="text"
-                        placeholder="555 - 867 - 5309"
+                        value={messageObject.number}
+                        onChange={(e) => onChange(e)}
                     />
                     <Form.Text className="text-muted">
                         I'll never share your phone or email with anyone else.
@@ -44,19 +78,27 @@ const Contact = () => {
                         name="subject"
                         type="text"
                         label="Check me out"
-                        placeholder="Get creative with it!"
+                        value={messageObject.subject}
+                        onChange={(e) => onChange(e)}
                     />
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>Message</Form.Label>
                     <Form.Control
+                        name="message"
                         type="text"
                         as="textarea"
                         height="100%"
-                        placeholder="How can I help you?"
+                        value={messageObject.message}
+                        onChange={(e) => onChange(e)}
                     />
                 </Form.Group>
-                <Button variant="light" type="submit" className="mb-2">
+                <Button
+                    variant="light"
+                    type="submit"
+                    className="mb-2"
+                    onClick={onSubmit}
+                >
                     Get In Touch
                 </Button>
             </Form>
